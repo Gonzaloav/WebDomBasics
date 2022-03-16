@@ -1,17 +1,12 @@
+const butonX2 = document.querySelector("button");
+const inputP = document.querySelector("input");
 
-function multiplicaX2(val){
-    return val *2;
+function multiplicador (event) {
+    //console.log("Upp!");
+    
+    const resultado = inputP.value * 2;
+    inputPesadilla.value = resultado;
 }
-const botonX2 = document.querySelector("#botonX2");
-const multiplicador = document.querySelector ("#multiplicador");
 
-boton.addEventListener("click",(event) => {
-        const valInicial = document.querySelector("#multiplicador").value;
-        let valFinal = multiplicaX2(valInicial);
-        multiplicador.value = valFinal;
-    }
-);
-
-
-
+butonX2.addEventListener("click", multiplicador);
 
